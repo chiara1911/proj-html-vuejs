@@ -1,12 +1,14 @@
 <template>
-  <div class="bg-danger">
+  <div class="">
     <h1 class="text-center">header</h1>
-    <div class="container">
-      <div class="top-bar mt-2 d-flex flex-row justify-content-between">
+
+    <div class="top-bar mt-2 d-flex flex-row justify-content-between bg-danger">
+      <div class="container">
         <div id="top-left">
           <button class="btn bg-secondary text-uppercase text-light">
             news updates
           </button>
+          <img src="images/assets/300x250.webp" alt="adv-banner" class="w-auto ">
           <span class="text-uppercase">05:35 the_</span>
         </div>
         <div
@@ -25,20 +27,23 @@
         </div>
       </div>
     </div>
-    <div class="container bg-info">
-      
-      <div id="topbar-main" class="d-flex flew-row justify-content-between align-content-between">
-<img src="images/assets/anime-logo-300x89.webp" alt="anime-logo">
-<img src="images/assets/header-banner.webp" alt="banner">
+    <div class="container">
+      <div
+        id="topbar-main"
+        class="d-flex flew-row justify-content-between align-content-between"
+      >
+        <img src="images/assets/anime-logo-300x89.webp" alt="anime-logo" />
+        <img src="images/assets/header-banner.webp" alt="banner" />
       </div>
-      <div id="topbar-footer" class="d-flex flew-row justify-content-between align-content-between">
+      <div id="topbar-footer" class="d-flex flew-row justify-content-between align-content-between mt-3"
+      >
         <i class="fa-solid fa-bars"></i>
-        <ul class="d-flex flex-row list-unstyled justify-content-between ">
-          <li><i class="fa-solid fa-house"></i>Home</li>
-          <li><i class="fa-solid fa-suitcase"></i>lifestyle</li>
-          <li><i class="fa-solid fa-book-open-reader"></i>stories</li>
-          <li><i class="fa-solid fa-book"></i>pages</li>
-          <li><i class="fa-solid fa-user"></i>about us</li>
+        <ul class="d-flex flex-row list-unstyled justify-content-between">
+          <li class="mx-1"><i class="fa-solid fa-house"></i>Home</li>
+          <li class="mx-1"><i class="fa-solid fa-suitcase"></i>lifestyle</li>
+          <li class="mx-1"><i class="fa-solid fa-book-open-reader"></i>stories</li>
+          <li class="mx-1"><i class="fa-solid fa-book"></i>pages</li>
+          <li class="mx-1"><i class="fa-solid fa-user"></i>about us</li>
         </ul>
         <i class="fa-solid fa-search"></i>
       </div>
@@ -50,6 +55,13 @@
 <script>
 export default {
   name: "HeaderApp",
+  data(){
+    return{
+      listEl:[
+        
+      ]
+    }
+  }
 };
 </script>
 
