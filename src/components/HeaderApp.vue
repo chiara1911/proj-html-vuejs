@@ -1,6 +1,6 @@
 <template>
   <div class="">
-    <h1 class="text-center">header</h1>
+ 
 
     <div class="top-bar mt-2 d-flex flex-row justify-content-between bg-danger">
       <div class="container">
@@ -8,7 +8,7 @@
           <button class="btn bg-secondary text-uppercase text-light">
             news updates
           </button>
-          <img src="images/assets/300x250.webp" alt="adv-banner" class="w-auto ">
+          <img src="images/assets/300x250.webp" alt="adv-banner" id="img-top">
           <span class="text-uppercase">05:35 the_</span>
         </div>
         <div
@@ -43,25 +43,39 @@
           <li class="mx-1"><i class="fa-solid fa-suitcase"></i>lifestyle</li>
           <li class="mx-1"><i class="fa-solid fa-book-open-reader"></i>stories</li>
           <li class="mx-1"><i class="fa-solid fa-book"></i>pages</li>
-          <li class="mx-1"><i class="fa-solid fa-user"></i>about us</li>
+          <li class="mx-1"><i class="fa-solid fa-user"></i>about us</li> 
         </ul>
         <i class="fa-solid fa-search"></i>
       </div>
     </div>
-    <div>scroll immagini</div>
+    <div class="d-flex flex-row">
+      <CardComponent v-for="card in this.store.cardEl" :title="card.title" :img="card.img"/> 
+    </div>
   </div>
 </template>
 
 <script>
+import CardComponent from './CardComponent.vue';
+import {store} from '../data/store'
 export default {
   name: "HeaderApp",
-  data(){
-    return{
-      listEl:[
+  components:{
+    CardComponent
+    
+  },
+ data(){
+   return{
+    store
+  //     listEl:[
+  //       text = ['Home', 'Lifestyle','Stories','Pages', 'About Us'] ,
+  //       icon = ['fa-house', 'fa-suitcase', 'fa-book-open-reader', 'fa-book','fa-user']
+
+
         
-      ]
-    }
-  }
+  //       ]
+        
+   }
+   }
 };
 </script>
 
@@ -69,4 +83,7 @@ export default {
 i {
   padding-left: 5px;
 }
+#img-top{
+    width: 40px;
+  }
 </style>
