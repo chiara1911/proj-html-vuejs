@@ -1,14 +1,12 @@
 <template>
-  <div class="">
- 
-
+  <div>
     <div class="top-bar mt-2 d-flex flex-row justify-content-between bg-danger">
       <div class="container">
         <div id="top-left">
           <button class="btn bg-secondary text-uppercase text-light">
             news updates
           </button>
-          <img src="images/assets/300x250.webp" alt="adv-banner" id="img-top">
+          <img src="images/assets/300x250.webp" alt="adv-banner" id="img-top" />
           <span class="text-uppercase">05:35 the_</span>
         </div>
         <div
@@ -35,67 +33,54 @@
         <img src="images/assets/anime-logo-300x89.webp" alt="anime-logo" />
         <img src="images/assets/header-banner.webp" alt="banner" />
       </div>
-      <div id="topbar-footer" class="d-flex flew-row justify-content-between align-content-between mt-3"
+      <div
+        id="topbar-footer"
+        class="d-flex flew-row justify-content-between align-content-between mt-3"
       >
         <i class="fa-solid fa-bars"></i>
         <ul class="d-flex flex-row list-unstyled justify-content-between">
-          <li v-for = "listEl in list" ><i :class="listEl.icon" class="p-2"></i>{{ listEl.text }}</li>
+          <li v-for="listEl in list">
+            <i :class="listEl.icon" class="p-2"></i>{{ listEl.text }}
+          </li>
         </ul>
         <i class="fa-solid fa-search"></i>
       </div>
     </div>
-    
-    <div class="d-flex flex-row">
-      <CardSlider />
-      <!-- <CardComponent v-for="card in this.store.cardEl" :title="card.title" :img="card.img"/>  -->
-    </div>
+
+    <CardSlider />
   </div>
 </template>
 
 <script>
-import CardComponent from './CardComponent.vue';
-import {store} from '../data/store';
-import CardSlider from './CardSlider.vue';
+import CardComponent from "./CardComponent.vue";
+import { store } from "../data/store";
+import CardSlider from "./CardSlider.vue";
 export default {
   name: "HeaderApp",
-  components:{
+  components: {
     CardComponent,
-    CardSlider
-    
-  },
- data(){
-   return{
+    CardSlider,
     store,
-      list :[
-        { text:"Home",
-        icon: "fa-solid fa-house"},
-        { text:"Lifestyle",
-        icon: "fa-solid fa-suitcase"},
-        { text:"Stories",
-        icon: " fa-solid fa-book-open-reader"},
-        { text:"Pages",
-        icon: "fa-solid fa-book"},
-        { text:"About Us",
-        icon: "fa-solid fa-user"},
-
-       
-   ]
-       
-
-
-        
-      }
-        
-   }
-   }
-;
+  },
+  data() {
+    return {
+      list: [
+        { text: "Home", icon: "fa-solid fa-house" },
+        { text: "Lifestyle", icon: "fa-solid fa-suitcase" },
+        { text: "Stories", icon: " fa-solid fa-book-open-reader" },
+        { text: "Pages", icon: "fa-solid fa-book" },
+        { text: "About Us", icon: "fa-solid fa-user" },
+      ],
+    };
+  },
+}
 </script>
 
 <style lang="scss" scoped>
 i {
   padding-left: 5px;
 }
-#img-top{
-    width: 40px;
-  }
+#img-top {
+  width: 40px;
+}
 </style>

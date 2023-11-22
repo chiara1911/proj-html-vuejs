@@ -24,8 +24,16 @@ export const store = reactive({
             img: "images/assets/travel-alone.webp",
             title: "Traveling Alone Is Awesome"
         },
+        {      
+            img: "images/assets/travel-alone.webp",
+            title: "Traveling Alone Is Awesome"
+        },
+        {      
+            img: "images/assets/travel-alone.webp",
+            title: "Traveling Alone Is Awesome"
+        },
         
            
     ],
-    activeSlides: 0
+
 });

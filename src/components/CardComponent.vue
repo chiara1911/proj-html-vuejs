@@ -15,15 +15,18 @@ import {store} from '../data/store'
 
     export default {
         name: "CardComponent",
-        components :{
-            store
-            
+        components :{            
+                    },
+        data(){
+            return {
+                store
+            }
         },
        props:{ 
       img :String,   
       title: String
        },
-     
+
 
     }
 </script>
