@@ -36,5 +36,6 @@ import {store} from '../data/store'
 img{
     width: 250px;
     height: 250px;
+    border-radius: 5%;
 }
 </style>
