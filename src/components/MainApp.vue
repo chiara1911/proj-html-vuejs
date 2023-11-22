@@ -7,22 +7,7 @@
    <LifeStyle />
    <img src="images/assets/page-banner-1.webp" alt="page-banner" class="w-100">
 
-    <section class="d-flex flex-column border">
-      featured posts
-      <div class="container">
-        <div class="row">
-          <div class="col-4">
-            <img src="images/assets/300x250.webp" alt="" />
-          </div>
-          <div class="col-4">
-            <img src="images/assets/300x250.webp" alt="" />
-          </div>
-          <div class="col-4">
-            <img src="images/assets/300x250.webp" alt="" />
-          </div>
-        </div>
-      </div>
-    </section>
+    <Features />
 <h2 class="text-center">video</h2>
     <VideoMain />
   </div>
@@ -34,6 +19,7 @@ import CardComponent from "./CardComponent.vue";
 import CardSlider from "./CardSlider.vue";
 import FirstMain from "./MainComponent/FirstMain.vue";
 import LifeStyle from "./MainComponent/LifeStyle.vue";
+import Features from "./MainComponent/Features.vue";
 import VideoMain from "./MainComponent/VideoMain.vue";
 export default {
   name: "MainApp",
@@ -42,6 +28,7 @@ export default {
     CardSlider,
     FirstMain,
     LifeStyle,
+    Features,
     VideoMain
   },
   data() {
