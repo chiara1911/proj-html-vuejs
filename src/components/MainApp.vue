@@ -1,7 +1,7 @@
 <template>
     <div class="container bg-info">
 <h2>main</h2>
-<section class="d-flex flex-row">
+<section class="d-flex flex-row border ">
     <div class="container">
 <!--     
      <CardComponent v-for="card in this.store.cardEl" :title="card.title" :img="card.img"/>  -->
@@ -40,33 +40,94 @@
      </div>
     </div>
     </section>
-<section class="d-flex flex-column">
     lifestyle
-    <div class="d-flex flex-row">
-    
-            
-    <CardComponent v-for="card in this.store.cardEl" :title="card.title" :img="card.img"/>
-</div>
-    
-</section>
-<section class="d-flex flex-column">
-    logo grande
-    <div class="d-flex flex-row">
-    <CardComponent v-for="card in this.store.cardEl" :title="card.title" :img="card.img"/>
-</div>
-    
-</section>
-<section class="d-flex flex-column">
+    <section class="d-flex flex-row border">
+    <div class="container">
+<!--     
+     <CardComponent v-for="card in this.store.cardEl" :title="card.title" :img="card.img"/>  -->
+     <div class="row">
+        <!-- card a sinistra -->
+        <div class="col-7">
+            <div class="box d-flex flex-column ">
+                <img src="images/assets/best-places-300x200.webp" alt="">
+                <span>hello</span>
+            </div>
+        </div>
+              
+        <!-- card a destra -->
+        <div class="col-3 d-flex flex-column flex-nowrap">
+            <div class="box ">
+                <img src="images/assets/best-places-300x200.webp" alt="">
+                <span>hello</span>
+            </div>
+            <div class="box">
+                <img src="images/assets/best-places-300x200.webp" alt="">
+                <span>hello</span>
+            </div>
+            <div class="box">
+                <img src="images/assets/best-places-300x200.webp" alt="">
+                <span>hello</span>
+            </div>          
+        
+     </div>
+     </div>
+    </div>
+    </section>
+
+<section class="d-flex flex-column border">
     featured posts
-    <div class="d-flex flex-row">
-    <CardComponent v-for="card in this.store.cardEl" :title="card.title" :img="card.img"/>
-</div>
+    <div class="container">
+        <div class="row">
+            <div class="col-4">
+                <img src="images/assets/300x250.webp" alt="">
+                
+            </div>
+            <div class="col-4">
+                <img src="images/assets/300x250.webp" alt="">
+            </div>
+            <div class="col-4">
+                <img src="images/assets/300x250.webp" alt="">
+            </div>
+        </div>
+    </div>
 </section>
-<section class="d-flex flex-column">
+
+<section class="d-flex flex-row border">
     video
-    <div class="d-flex flex-row">
-    <CardComponent v-for="card in this.store.cardEl" :title="card.title" :img="card.img"/>
-</div>
+   
+    <div class="container">
+<!--     
+     <CardComponent v-for="card in this.store.cardEl" :title="card.title" :img="card.img"/>  -->
+     <div class="row">
+        <!-- card a sinistra -->
+        <div class="col-7">
+            <div class="box d-flex flex-column ">
+                <img src="images/assets/best-places-300x200.webp" alt="">
+                <span>hello</span>
+            </div>
+        </div>
+              
+        <!-- card a destra -->
+        <div class="col-3 d-flex flex-column flex-nowrap">
+            <div class="box ">
+                <img src="images/assets/best-places-300x200.webp" alt="">
+                <span>hello</span>
+            </div>
+            <div class="box">
+                <img src="images/assets/best-places-300x200.webp" alt="">
+                <span>hello</span>
+            </div>
+            <div class="box">
+                <img src="images/assets/best-places-300x200.webp" alt="">
+                <span>hello</span>
+            </div>          
+        
+     </div>
+     </div>
+    </div>
+    
+
+
 </section>
 
     </div>
