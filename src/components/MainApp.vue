@@ -96,8 +96,7 @@
     video
    
     <div class="container">
-<!--     
-     <CardComponent v-for="card in this.store.cardEl" :title="card.title" :img="card.img"/>  -->
+
      <div class="row">
         <!-- card a sinistra -->
         <div class="col-7">

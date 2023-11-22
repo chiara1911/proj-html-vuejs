@@ -39,11 +39,7 @@
       >
         <i class="fa-solid fa-bars"></i>
         <ul class="d-flex flex-row list-unstyled justify-content-between">
-          <li class="mx-1"><i class="fa-solid fa-house"></i>Home</li>
-          <li class="mx-1"><i class="fa-solid fa-suitcase"></i>lifestyle</li>
-          <li class="mx-1"><i class="fa-solid fa-book-open-reader"></i>stories</li>
-          <li class="mx-1"><i class="fa-solid fa-book"></i>pages</li>
-          <li class="mx-1"><i class="fa-solid fa-user"></i>about us</li> 
+          <li v-for = "listEl in list" ><i :class="listEl.icon" class="p-2"></i>{{ listEl.text }}</li>
         </ul>
         <i class="fa-solid fa-search"></i>
       </div>
@@ -65,18 +61,30 @@ export default {
   },
  data(){
    return{
-    store
-  //     listEl:[
-  //       text = ['Home', 'Lifestyle','Stories','Pages', 'About Us'] ,
-  //       icon = ['fa-house', 'fa-suitcase', 'fa-book-open-reader', 'fa-book','fa-user']
+    store,
+      list :[
+        { text:"Home",
+        icon: "fa-solid fa-house"},
+        { text:"Lifestyle",
+        icon: "fa-solid fa-suitcase"},
+        { text:"Stories",
+        icon: " fa-solid fa-book-open-reader"},
+        { text:"Pages",
+        icon: "fa-solid fa-book"},
+        { text:"About Us",
+        icon: "fa-solid fa-user"},
+
+       
+   ]
+       
 
 
         
-  //       ]
+      }
         
    }
    }
-};
+;
 </script>
 
 <style lang="scss" scoped>
