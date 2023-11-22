@@ -25,6 +25,7 @@ export const store = reactive({
             title: "Traveling Alone Is Awesome"
         },
         
-    
-    ]
+           
+    ],
+    activeSlides: 0
 });

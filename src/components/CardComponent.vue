@@ -1,7 +1,7 @@
 <template>
     <div class="d-flex flew-column px-2">
         <div class="box">
-            <img :src="img" :alt="text">
+            <img :src="img" :alt="title">
         <h6>{{title}}</h6>
         <h6>December 26, 2022</h6>
         </div>

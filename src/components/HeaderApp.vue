@@ -44,19 +44,23 @@
         <i class="fa-solid fa-search"></i>
       </div>
     </div>
+    
     <div class="d-flex flex-row">
-      <CardComponent v-for="card in this.store.cardEl" :title="card.title" :img="card.img"/> 
+      <CardSlider />
+      <!-- <CardComponent v-for="card in this.store.cardEl" :title="card.title" :img="card.img"/>  -->
     </div>
   </div>
 </template>
 
 <script>
 import CardComponent from './CardComponent.vue';
-import {store} from '../data/store'
+import {store} from '../data/store';
+import CardSlider from './CardSlider.vue';
 export default {
   name: "HeaderApp",
   components:{
-    CardComponent
+    CardComponent,
+    CardSlider
     
   },
  data(){
