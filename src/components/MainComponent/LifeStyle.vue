@@ -1,4 +1,14 @@
 <template>
+  <div class="d-flex flew-row justify-content-between ">
+    <h2 class="text-uppercase">lifestyle & stories</h2>
+    <div>
+      <button class="btn bg-secondary text-light text-uppercase mx-3">all</button>
+      <button class="btn bg-secondary text-light text-uppercase mx-3">lifestyle</button>
+      <button class="btn bg-secondary text-light text-uppercase mx-3">stories</button>
+    </div>
+  </div>
+  
+
   <section class="d-flex flex-row border" id="life">
     <div class="left-side side border">
       <img src="images/assets/healthy-foods.webp" alt="" />
