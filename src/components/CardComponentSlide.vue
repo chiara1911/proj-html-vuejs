@@ -3,7 +3,7 @@
         <div class="cat" >
           
             <button class="btn btn-light ">{{ item }}</button>
-            <button class="btn btn-light">{{ item2 }}</button>
+            
         </div>
        
       <img :src="img" :alt="title" />
@@ -29,8 +29,19 @@
       title: String,
       date: String,
       item: String,
-      item2: String
+    
     },
+
+    methods:{
+      setButton(){
+        
+        let buttonEl;
+        for(let i = 0; i < this.categories.lenght; i++){
+          
+          return buttonEl
+        }
+      }
+    }
   };
   </script>
   

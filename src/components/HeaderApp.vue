@@ -1,7 +1,7 @@
 <template>
   <div>
-    <div class="top-bar mt-2 d-flex flex-row justify-content-between bg-danger">
-      <div class="container">
+    <div class="top-bar mt-2 bg-danger">
+      <div class="container  d-flex flex-row justify-content-between">
         <div id="top-left">
           <button class="btn bg-secondary text-uppercase text-light">
             news updates
@@ -10,12 +10,12 @@
           <span class="text-uppercase">05:35 the_</span>
         </div>
         <div
-          class="top-right d-flex flex-row justify-content-between align-content-between mx-1 text-light"
+          class="top-right d-flex flex-row justify-content-between align-content-between align-items-bottom text-light"
         >
-          <span class="icon-left mx-4">
+          <div class="icon-left mx-4">
             <i class="fa-solid fa-angle-left"></i>
             <i class="fa-solid fa-angle-right"></i>
-          </span>
+          </div>
           <ul class="d-flex flex-row list-unstyled icon-right">
             <li><i class="fa-brands fa-facebook"></i></li>
             <li><i class="fa-brands fa-twitter"></i></li>
@@ -52,13 +52,13 @@
 </template>
 
 <script>
-import CardComponent from "./CardComponent.vue";
+
 import { store } from "../data/store";
 import CardSlider from "./CardSlider.vue";
 export default {
   name: "HeaderApp",
   components: {
-    CardComponent,
+ 
     CardSlider,
     store,
   },

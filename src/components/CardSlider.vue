@@ -1,10 +1,10 @@
 <template>
   <div class="content d-flex flex-row justify-content-between">
-    <div class="d-flex flex-row justify-content-between cardBox" id="">
+    <div class="d-flex flex-row justify-content-between cardBox">
       <CardComponentSlide  v-for="el in this.store.cardEl"
         :title="el.title"
         :img="el.img"
-        :date="el.date" :item="el.categories.info1" :item2="el.categories.info2"/>
+        :date="el.date" :item="el.categories.info" />
        
       />
     </div>

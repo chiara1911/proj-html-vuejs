@@ -1,5 +1,5 @@
 <template>
-  <div class="d-flex flew-row justify-content-between ">
+  <div class="d-flex flew-row justify-content-between mt-3">
     <h2 class="text-uppercase">lifestyle & stories</h2>
     <div>
       <button class="btn bg-secondary text-light text-uppercase mx-3">all</button>
