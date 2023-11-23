@@ -9,7 +9,7 @@
               <ul class="list-unstyled">
                 <h6 class="text-uppercase text-light">get started</h6>
                 <li v-for="start in started">
-                  <a href="#" class="text-light">{{ start }}</a>
+                  <a href="#" class="text-light"><span>{{ start }}</span></a>
                 </li>
               </ul>
             </div>
@@ -17,7 +17,7 @@
               <ul class="list-unstyled">
                 <h6 class="text-uppercase text-light">about</h6>
                 <li v-for="aboutEl in about" class="text-light">
-                  <a href="#" class="text-light">{{ aboutEl }}</a>
+                  <a href="#" class="text-light"><span>{{ aboutEl }}</span></a>
                 </li>
               </ul>
             </div>
@@ -25,7 +25,7 @@
               <ul class="list-unstyled">
                 <h6 class="text-uppercase text-light">features</h6>
                 <li v-for="featuresEl in features" class="text-light">
-                  <a href="#" class="text-light">{{ featuresEl }}</a>
+                  <a href="#" class="text-light"><span>{{ featuresEl }}</span></a>
                 </li>
               </ul>
             </div>
@@ -33,14 +33,14 @@
               <ul class="list-unstyled">
                 <h6 class="text-uppercase text-light">quickLinks</h6>
                 <li v-for="quickLinksEl in quickLinks" class="text-light">
-                  <a href="#" class="text-light">{{ quickLinksEl }}</a>
+                  <a href="#" class="text-light"><span>{{ quickLinksEl }}</span></a>
                 </li>
               </ul>
             </div>
           </div>
           </div>
           <div class="col-3 mt-5 d-flex flex-column" >
-            <span class="text-uppercase"> subscribe to newsletter</span>
+            <span class="text-uppercase text-light"> subscribe to newsletter</span>
             <input type="e-mail" name="hello" placeholder="email" />
             <button class="btn btn-secondary text-uppercase mt-2"> subscribe</button>
           </div>
@@ -55,9 +55,9 @@
         name:"TopFooter",
         data() {
     return {
-      started: ["resouces", "tutorials", "explanes", "docs"],
+      started: ["Resouces", "Tutorials", "Explanes", "Docs"],
 
-      about: ["stories", "Community", "Blog", "Brand Assents"],
+      about: ["Stories", "Community", "Blog", "Brand Assents"],
       features: ["Overview", "Design", "Code", "Collaborate"],
       quickLinks: ["Stories", "Community", "Blog", "Brand Assets"],
     };
@@ -68,5 +68,13 @@
 <style lang="scss" scoped>
 a {
   text-decoration: none;
+}
+span:hover{
+  color: grey;
+}
+button:hover{
+  background-color: white;
+  color: red;
+  border: 0;
 }
 </style>

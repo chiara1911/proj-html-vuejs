@@ -8,61 +8,38 @@
     </div>
   </div>
   
+  <!-- sezione immagini -->
 
-  <section class="d-flex flex-row border" id="life">
-    <div class="left-side side border">
+  <section class="d-flex flex-row pt-2" id="life">
+    <div class="left-side side ">
       <img src="images/assets/healthy-foods.webp" alt="" />
     </div>
 
     <div class="right-side side d-flex flex-column flex-nowrap overflow-y-scroll ">
-      <CardComponent
+      <div >
+        <CardComponentSlide class="d-flex flex-row mx-3 mt-1 text-center align-items-center"
         v-for="el in store.cardEl"
         :img="el.img"
         :title="el.title"
         :date="el.date"
       />
+      </div>
+      
     </div>
-    <!-- <div class="container"> -->
-    <!--     
-     <CardComponent v-for="card in this.store.cardEl" :title="card.title" :img="card.img"/>  -->
-    <!-- <div class="row"> -->
-
-    <!-- card a sinistra -->
-    <!-- <div class="col-7">
-            <div class="box d-flex flex-column">
-              <img src="images/assets/best-places-300x200.webp" alt="" />
-              <span>hello</span>
-            </div>
-          </div> -->
-
-    <!-- card a destra -->
-    <!-- <div class="col-3 d-flex flex-column flex-nowrap">
-            <div class="box">
-              <img src="images/assets/best-places-300x200.webp" alt="" />
-              <span>hello</span>
-            </div>
-            <div class="box">
-              <img src="images/assets/best-places-300x200.webp" alt="" />
-              <span>hello</span>
-            </div>
-            <div class="box">
-              <img src="images/assets/best-places-300x200.webp" alt="" />
-              <span>hello</span>
-            </div>
-          </div>
-        </div>
-      </div> -->
+    
   </section>
 </template>
 
 <script>
-import CardComponent from "../CardComponent.vue";
+// import CardComponent from "../CardComponent.vue";
 import { store } from "../../data/store";
+import CardComponentSlide from "../CardComponentSlide.vue";
 export default {
   name: "LifeStyle",
   components: {
-    CardComponent,
-  },
+    // CardComponent,
+    CardComponentSlide
+},
   data() {
     return {
       store,
@@ -73,16 +50,19 @@ export default {
 
 <style lang="scss" scoped>
 #life {
-  height: 570px;
+  height: 470px;
 }
 img {
   width: 100%;
+  display: block;
   object-fit: contain;
 }
 .left-side {
-  width: 66%;
+  width: 50%;
+  height: 100%
 }
 .right-side{
-  width: calc(100% - 66%);
+  width: 50%;
 }
+
 </style>

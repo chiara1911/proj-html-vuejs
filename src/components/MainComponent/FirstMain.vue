@@ -1,18 +1,15 @@
 <template>
-  <section class="d-flex flex-row border">
-    <div id="left-box" >
-      <img src="images/assets/anime-fashion.webp" alt="" class="m-2">
-      <img src="images/assets/anime-fashion.webp" alt="" class="m-2">
+  <section class="d-flex flex-row justify-content-between ">
+    <div id="left-box" class="mt-2" >
+      <CardComponent v-for="el in store.cardEl.slice(0,2)" :img="el.img" :date="el.date" :title="el.title" class="text-light mt-2 "/>
+    
     </div>
-    <div id="middle-box " class="w-100 m-2"> <img src="images/assets/anime-fashion.webp" alt="" class="w-100 h-100"></div>
-   
-    <!-- <div class="col-4" v-for="el in store.cardEl">
-            <CardComponent :img="el.img" :title="el.title" :date="el.date"/>
-
-          </div> -->
-    <div id="right-box ">
-      <img src="images/assets/anime-fashion.webp" alt=""  class="m-2">
-      <img src="images/assets/anime-fashion.webp" alt=""  class="m-2">
+    <div id="middle-box " class="mt-2">
+      <img src="images/assets/winter.webp" alt="">
+    </div>
+    <div id="right-box " class="mt-2">
+      <CardComponent v-for="el in store.cardEl.slice(4,6)" :img="el.img" :date="el.date" :title="el.title" class="text-light mt-2 "/>
+      
     </div>
   </section>
 </template>
@@ -39,20 +36,11 @@ export default {
 
 <style lang="scss" scoped>
 img {
-  width: 250px;
-  height: 250px;
+width: 100%;
+height: 100%;
   display: block;
   object-fit: cover;
  border-radius: 10%;
 }
-#left-box {
-  width: 25%;
-}
-#middle-box {
-  width: 50%;
-  height: 100%;
-}
-#right-box {
-  width: 25%;
-}
+
 </style>

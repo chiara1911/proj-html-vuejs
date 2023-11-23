@@ -1,16 +1,18 @@
 <template>
-  <div class="container bg-info">
-    <h2>main</h2>
-<FirstMain />
-    
-    lifestyle
-   <LifeStyle />
-   <img src="images/assets/page-banner-1.webp" alt="page-banner" class="w-100 my-3">
-
+  <div class="container mt-3">
+    <FirstMain />
+    <LifeStyle />
+  </div>
+  <div class="logo-img py-2">
+    <img
+      src="images/assets/page-banner-1.webp"
+      alt="page-banner"
+      class="w-100"
+    />
+  </div>
+  <div class="container">
     <Features />
-<h2 class="text-center">video</h2>
     <VideoMain />
-
   </div>
   <BottomMain />
 </template>
@@ -33,7 +35,7 @@ export default {
     LifeStyle,
     Features,
     VideoMain,
-    BottomMain
+    BottomMain,
   },
   data() {
     return {
@@ -43,4 +45,9 @@ export default {
 };
 </script>
 
-<style lang="scss" scoped></style>
+<style lang="scss" scoped>
+.logo-img {
+  background-color: #f3f3f3;
+  padding: 0 280px;
+}
+</style>

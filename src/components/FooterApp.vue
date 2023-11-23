@@ -1,13 +1,9 @@
 <template>
-  <div class="ms-2">
-    <h2 class="text-center">footer</h2>
+  <div class="pt-3">
     <section class="m-2">
-      
+      <TopFooter />
+      <BottomFooter />
     </section>
-
-    <TopFooter />
-
-    <BottomFooter />
   </div>
 </template>
 

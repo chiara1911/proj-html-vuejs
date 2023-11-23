@@ -39,8 +39,8 @@
       >
         <i class="fa-solid fa-bars"></i>
         <ul class="d-flex flex-row list-unstyled justify-content-between">
-          <li v-for="listEl in list">
-            <i :class="listEl.icon" class="p-2"></i>{{ listEl.text }}
+          <li v-for="listEl in list" id="icon-store">
+            <i :class="listEl.icon" class="p-2" ></i>{{ listEl.text }}
           </li>
         </ul>
         <i class="fa-solid fa-search"></i>
@@ -82,5 +82,9 @@ i {
 }
 #img-top {
   width: 40px;
+}
+
+#icon-store:hover{
+  color: red;
 }
 </style>

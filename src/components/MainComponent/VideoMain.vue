@@ -29,6 +29,14 @@ import VideoComponent from '../VideoComponent.vue';
           return{
             store
           }
+        },
+        methods:{
+          getActive(index) {
+        return index === this.activeSlides ? 'active' : '';
+     },
+     activeVideo(index){
+        this.activeSlides = index
+    }
         }
     }
 </script>
