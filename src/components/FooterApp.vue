@@ -2,28 +2,7 @@
   <div class="ms-2">
     <h2 class="text-center">footer</h2>
     <section class="m-2">
-      <div class="container">
-        <div class="row">
-          <div class="col-2 p-1">
-            <img src="images/assets/300x250.webp" alt="" />
-          </div>
-          <div class="col-2 p-1">
-            <img src="images/assets/300x250.webp" alt="" />
-          </div>
-          <div class="col-2 p-1">
-            <img src="images/assets/300x250.webp" alt="" />
-          </div>
-          <div class="col-2 p-1">
-            <img src="images/assets/300x250.webp" alt="" />
-          </div>
-          <div class="col-2 p1">
-            <img src="images/assets/300x250.webp" alt="" />
-          </div>
-          <div class="col-2 p1">
-            <img src="images/assets/300x250.webp" alt="" />
-          </div>
-        </div>
-      </div>
+      
     </section>
 
     <TopFooter />

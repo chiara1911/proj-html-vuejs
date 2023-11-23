@@ -19,6 +19,7 @@
         v-for="el in store.cardEl"
         :img="el.img"
         :title="el.title"
+        :date="el.date"
       />
     </div>
     <!-- <div class="container"> -->

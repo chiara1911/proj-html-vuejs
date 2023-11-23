@@ -4,8 +4,9 @@
       <CardComponent
         v-for="card in this.store.cardEl"
         :title="card.title"
-        :img="card.img"
+        :img="card.img" :date="card.date"
       />
+     
     </div>
     <!-- <div class="d-flex flex-row  position-absolute ">
         <div class="btn border align-items-end  " @click="scrollLeft(100, 0)">
@@ -52,7 +53,7 @@ export default {
 <style lang="scss" scoped>
 .cardBox {
   width: 400px;
-  height: 370px;
+  height: 300px;
 }
 img {
   object-fit: contain;

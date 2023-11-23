@@ -4,7 +4,7 @@
             <img :src="img" :alt="title">
             <div>
                 <h6>{{title}}</h6>
-        <h6>December 26, 2022</h6>
+        <h6>{{ date }}</h6>
             </div>
         
         </div>
@@ -27,7 +27,8 @@ import {store} from '../data/store'
         },
        props:{ 
       img :String,   
-      title: String
+      title: String,
+      date: String
        },
 
 

@@ -1,6 +1,6 @@
 <template>
 <section class="d-flex flex-column border">
-    <div class="d-flex flex-row justify-content-between ">
+    <div class="d-flex flex-row justify-content-between">
         <h2 class="text-uppercase">featured posts</h2> 
         <div class=" mx-5 " >
             <i class="fa-solid fa-arrow-left m-2 fs-3"></i>
@@ -10,9 +10,10 @@
      
 
     <!-- componenti di features -->
-    <div class="d-flex flex-row flex-nowrap" id="card-feat">
-        <div class="box-card" v-for="el in store.cardEl">            
-        <CardComponent :img="el.img" :title="el.title"/>
+    <div class="d-flex flex-row flex-nowrap " id="card-feat" >
+        <div class="box-card mx-5" v-for="el in store.cardEl">            
+        <CardComponent :img="el.img" :title="el.title" :date="el.date"/>
+        <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus rerum eos tenetur tempore odio sunt placeat labore totam, reiciendis ea.</span>
     </div>       
     </div>
       <!-- <div class="container"> -->
@@ -48,9 +49,9 @@ import CardComponent from '../CardComponent.vue';
 <style lang="scss" scoped>
 #card-feat{
     width: 100%;
-  height: 350px;
+  height: 450px;
   overflow-x: scroll;
-  position: relative;
+  // position: relative;
 }
 img{
     display: block;
@@ -61,4 +62,5 @@ img{
 .box-card{
     width: 300px;
 }
+
 </style>

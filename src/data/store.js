@@ -6,31 +6,37 @@ export const store = reactive({
         {            
             img: "images/assets/healthy-foods.webp",
             title: "The Best Healthy Foods ",
-          
+            date: "December 26, 2022"          
         },
         {       
             img: "images/assets/winter.webp",
-            title: "The Best Winter Outfits"
+            title: "The Best Winter Outfits",
+            date: "December 26, 2022"
         },
         {      
             img: "images/assets/photographers-mistakes.webp",
-            title: "The Biggest Photographer mistakes"
+            title: "The Biggest Photographer mistakes",
+            date: "December 26, 2022"
         },
         {      
             img: "images/assets/visit-france.webp",
-            title: "Reason to Visit France"
+            title: "Reason to Visit France",
+            date: "December 26, 2022"
         },
         {      
             img: "images/assets/travel-alone.webp",
-            title: "Traveling Alone Is Awesome"
+            title: "Traveling Alone Is Awesome",
+            date: "December 26, 2022"
         },
         {      
             img: "images/assets/travel-alone.webp",
-            title: "Traveling Alone Is Awesome"
+            title: "Traveling Alone Is Awesome",
+            date: "December 26, 2022"
         },
         {      
             img: "images/assets/travel-alone.webp",
-            title: "Traveling Alone Is Awesome"
+            title: "Traveling Alone Is Awesome",
+            date: "December 26, 2022"
         },
         
            

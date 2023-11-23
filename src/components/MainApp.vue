@@ -10,7 +10,9 @@
     <Features />
 <h2 class="text-center">video</h2>
     <VideoMain />
+
   </div>
+  <BottomMain />
 </template>
 
 <script>
@@ -21,6 +23,7 @@ import FirstMain from "./MainComponent/FirstMain.vue";
 import LifeStyle from "./MainComponent/LifeStyle.vue";
 import Features from "./MainComponent/Features.vue";
 import VideoMain from "./MainComponent/VideoMain.vue";
+import BottomMain from "./MainComponent/BottomMain.vue";
 export default {
   name: "MainApp",
   components: {
@@ -29,7 +32,8 @@ export default {
     FirstMain,
     LifeStyle,
     Features,
-    VideoMain
+    VideoMain,
+    BottomMain
   },
   data() {
     return {
