@@ -66,19 +66,17 @@ import {store} from '../../data/store'
       img :String,   
       title: String
        },
-       computed:{
-    getImage(){
-      let image = this.cardEl
-      console.log(image)
-      return image
-      
-    }
+
   }
-    }
    
 
 </script>
 
 <style lang="scss" scoped>
+img{
+  width: 50px;
+  height: 50px;
+
+}
 
 </style>

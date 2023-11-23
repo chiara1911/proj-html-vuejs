@@ -5,7 +5,7 @@
     
     lifestyle
    <LifeStyle />
-   <img src="images/assets/page-banner-1.webp" alt="page-banner" class="w-100">
+   <img src="images/assets/page-banner-1.webp" alt="page-banner" class="w-100 my-3">
 
     <Features />
 <h2 class="text-center">video</h2>

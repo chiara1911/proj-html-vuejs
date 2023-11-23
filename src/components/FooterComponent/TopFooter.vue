@@ -1,6 +1,6 @@
 <template>
    
-        <div id="top-footer " class="bg-danger">          
+        <div id="top-footer " class="bg-danger pt-4">          
     <div class="container">
       <div class="row ">
         <div class="col-9 d-flex justify-content-between align-content-between">

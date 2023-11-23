@@ -2,8 +2,11 @@
     <div class="d-flex flew-column px-2">
         <div class="box">
             <img :src="img" :alt="title">
-        <h6>{{title}}</h6>
+            <div>
+                <h6>{{title}}</h6>
         <h6>December 26, 2022</h6>
+            </div>
+        
         </div>
         
     </div>
@@ -34,7 +37,7 @@ import {store} from '../data/store'
 <style lang="scss" scoped>
 
 img{
-    width: 250px;
+    width: 350px;
     height: 250px;
     border-radius: 5%;
 }
